@@ -10,7 +10,7 @@ setup(
     name="ood_diffusion_detector",
     version="0.1.0",
     author="Mohammed",
-    author_email="ahmed.mo.0595@gmail.com",
+    author_email="ahmed.mo.0593@gmail.com",
     description="A binary diffusion-based classifier for out-of-distribution detection",
     long_description=long_description,
     long_description_content_type="text/markdown",

@@ -88,19 +88,19 @@ if __name__ == "__main__":
     parser.add_argument("--epochs", type=int, default=1501, help="Number of training epochs")
     parser.add_argument("--accumulate_grad_batches", type=int, default=4, help="Gradient accumulation steps")
     parser.add_argument("--precision", type=str, default="bf16-mixed", help="Precision for training")
-    parser.add_argument("--devices", type=int, default=1, help="Number of GPUs to use")
+    parser.add_argument("--devices", type=int, default=2, help="Number of GPUs to use")
     parser.add_argument("--strategy", type=str, default="auto", help="Training strategy")
     parser.add_argument("--gradient_clip_val", type=float, default=1.0, help="Gradient clipping value")
     
     # Logging parameters
-    parser.add_argument("--experiment_name", type=str, default="diffusion_ood_detector", help="Name of the experiment")
-    parser.add_argument("--output_dir", type=str, default="./checkpoints", help="Output directory for checkpoints")
+    parser.add_argument("--experiment_name", type=str, default="exp_1", help="Name of the experiment")
+    parser.add_argument("--output_dir", type=str, default="/system/user/studentwork/mohammed/OOD-diffusion-detector/checkpoints", help="Output directory for checkpoints")
     parser.add_argument("--log_every_n_steps", type=int, default=25, help="Log every N steps")
     parser.add_argument("--check_val_every_n_epoch", type=int, default=5, help="Run validation every N epochs")
     parser.add_argument("--offline", action="store_true", help="Run WandB in offline mode")
     
     # Checkpointing
-    parser.add_argument("--checkpoint_path", type=str, default="", help="Path to checkpoint to resume from")
+    parser.add_argument("--checkpoint_path", type=str, default="/system/user/studentwork/mohammed/OOD-diffusion-detector/checkpoints/last.ckpt", help="Path to checkpoint to resume from")
     
     args = parser.parse_args()
-    main(args) 
+    main(args)
