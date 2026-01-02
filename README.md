@@ -44,7 +44,7 @@ OOD-diffusion-detector/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/OOD-diffusion-detector.git
+git clone https://github.com/ahmed-3m/OOD-diffusion-detector.git
 cd OOD-diffusion-detector
 ```
 
@@ -57,6 +57,13 @@ source env/bin/activate  # On Windows: env\Scripts\activate
 3. Install the dependencies:
 ```bash
 pip install -r requirements.txt
+```
+
+## Quick start
+
+```bash
+python scripts/train.py --output_dir ./checkpoints --experiment_name "diffusion_training"
+python scripts/evaluate.py --checkpoint_path ./checkpoints/last.ckpt
 ```
 
 ## Usage
@@ -113,15 +120,20 @@ This work builds on several key papers in the field:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Notes
+
+- Training is compute-intensive; a GPU is recommended for reasonable runtimes.
+- The `data/` directory is created on first run; downloads depend on your config.
+
 ## Citation
 
 If you use this code for your research, please cite:
 
 ```
 @software{OODDiffusionDetector,
-  author = {Your Name},
+  author = {Ahmed Mohammed},
   title = {OOD-Diffusion-Detector: A Binary Diffusion-Based OOD Detector},
   year = {2023},
-  url = {https://github.com/yourusername/OOD-diffusion-detector}
+  url = {https://github.com/ahmed-3m/OOD-diffusion-detector}
 }
 ```
