@@ -44,7 +44,7 @@ OOD-diffusion-detector/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/OOD-diffusion-detector.git
+git clone https://github.com/ahmed-3m/OOD-diffusion-detector.git
 cd OOD-diffusion-detector
 ```
 
@@ -119,9 +119,9 @@ If you use this code for your research, please cite:
 
 ```
 @software{OODDiffusionDetector,
-  author = {Your Name},
+  author = {Ahmed Mohammed},
   title = {OOD-Diffusion-Detector: A Binary Diffusion-Based OOD Detector},
   year = {2023},
-  url = {https://github.com/yourusername/OOD-diffusion-detector}
+  url = {https://github.com/ahmed-3m/OOD-diffusion-detector}
 }
 ```
